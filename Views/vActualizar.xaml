@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apalizT6A.Views.vActualizar"
+             Title="vActualizar">
+    <VerticalStackLayout>
+        <Entry x:Name="Txtcodigo"/>
+        <Entry x:Name="TxtNombre"
+               Placeholder="Ingrese el nombre"/>
+        <Entry x:Name="TxtApellido"
+               Placeholder="Ingrese el apellido"/>
+        <Entry x:Name="TxtEdad"
+               Placeholder="Ingrese la edad"/>
+        <Button x:Name="btnActualizar"
+                Text="Actualizar"
+                Clicked="btnActualizar_Clicked"/>
+        <Button x:Name="btnEliminar"
+                Text="Eliminar"
+                Clicked="btnEliminar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

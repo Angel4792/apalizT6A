@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="apalizT6A.Views.vEstudiante"
-             >
+             x:Class="apalizT6A.Views.vEstudiante">
 
     <VerticalStackLayout>
         <Label 
@@ -25,12 +24,12 @@
             <Label Text="Codigo" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="Nombre" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="Apellido" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Text="Edad" Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"/>
-            
-
+            <Label Text="Edad" Grid.Row="1" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Button x:Name="btnActualizar" Padding="1" Text="Actualizar" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="btnActualizar_Clicked"/>
+            <Button x:Name="btnAgregar" Text="Agregar" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnAgregar_Clicked"/>
         </Grid>
 
-        <ListView x:Name="lvEstudiantes">
+        <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
